@@ -25,6 +25,9 @@ target_include_directories(snap7 PRIVATE
     src/core
     src/lib
     src/sys)
+set_target_properties(snap7 PROPERTIES
+	VERSION 1.4.2
+	SOVERSION 1)
 
 if(WIN32)
     target_compile_definitions(snap7 PRIVATE
